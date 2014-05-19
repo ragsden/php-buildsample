@@ -1,0 +1,15 @@
+[global]
+AWSAccessKeyId=AKIAIWLDHIZNBNGR2PTQ
+AWSSecretKey=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
+ApplicationName=ragphp11
+DevToolsEndpoint=git.elasticbeanstalk.us-east-1.amazonaws.com
+EnvironmentName=ragphp11env
+EnvironmentTier=WebServer::Standard::1.0
+EnvironmentType=LoadBalanced
+InstanceProfileName=aws-elasticbeanstalk-ec2-role
+OptionSettingFile=/home/raghu/samples/php5/.elasticbeanstalk/optionsettings.ragphp11env
+RdsEnabled=No
+Region=us-east-1
+ServiceEndpoint=https://elasticbeanstalk.us-east-1.amazonaws.com
+SolutionStack=32bit Amazon Linux 2014.03 v1.0.2 running PHP 5.5
+
