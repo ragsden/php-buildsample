@@ -10,8 +10,8 @@ env:
 before_script: 
   - mkdir -p shippable/testresults
   - mkdir -p ~/.elasticbeanstalk
-  - echo $AWSAccessKeyId >> ~/.elasticbeanstalk/aws_credential_file
-  - echo $AWSSecretKey >> ~/.elasticbeanstalk/aws_credential_file
+  - echo 'AWSAccessKeyId='$AWSAccessKeyId >> ~/.elasticbeanstalk/aws_credential_file
+  - echo 'AWSSecretKey='$AWSSecretKey >> ~/.elasticbeanstalk/aws_credential_file
 
 script:
   - mkdir -p .elasticbeanstalk

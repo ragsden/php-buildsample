@@ -22,8 +22,6 @@ notifications:
    email: false
 
 after_success :
-  - export PATH=$PATH:/home/raghu/samples/aws/eb/linux/python2.7/
-  - eb init
-  - eb push
+  - export PATH=$PATH:/home/raghu/samples/aws/eb/linux/python2.7/ && eb init && eb push
 
       
