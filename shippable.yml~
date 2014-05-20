@@ -10,7 +10,7 @@ env:
 before_script: 
   - mkdir -p shippable/testresults
   - mkdir -p ~/.elasticbeanstalk
-  - echo 'AWSAccessKeyId='$AWSAccessKeyId >> ~/.elasticbeanstalk/aws_credential_file
+  - echo 'AWSAccessKeyId=AKIAIWLDHIZNBNGR2PTQ' >> ~/.elasticbeanstalk/aws_credential_file
   - echo 'AWSSecretKey='$AWSSecretKey >> ~/.elasticbeanstalk/aws_credential_file
 
 script:
@@ -22,6 +22,6 @@ notifications:
    email: false
 
 after_success :
-  - export PATH=$PATH:/home/raghu/samples/aws/eb/linux/python2.7/ && eb init && eb push
+  - export PATH=$PATH:$PWD/aws/eb/linux/python2.7/ && eb init && eb push
 
       
